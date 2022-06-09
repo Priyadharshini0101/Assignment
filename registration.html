@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <script type="text/javascript">
+
+        function addtext()
+        {
+           var fname = document.myform.fname.value;
+           var number  = document.myform.number.value;
+           var address= document.myform.address.value;
+           var description=document.myform.description.value;
+           document.writeln("Successfully registered!");
+           document.writeln("<pre>");
+           document.writeln("Name   : " + fname);
+           document.writeln("Mobile Number: " + number);
+           document.writeln("Address : " + address);
+           document.writeln("Description : " + description);
+        }
+      </script>
+    </HEAD>  
+    <form name="myform"> 
+    <body style="background-color: burlywood; 
+    text-align: center ;">
+    
+    <h1 style="font-size: medium;font-family: Verdana, Geneva, Tahoma, sans-serif;">REGISTRATION FORM</h1>
+    <label for="fname;font-size:15px;">Name:</label><br><br>
+    <input id="fname" name="fname" type ="text"><br><br>
+    <label for="number">Mobile Number:</label><br><br>
+    <input id="number" name="number" type ="tel"><br><br>
+    <label for="address">Address:</label><br><br>
+    <input id="address" name="address" type ="text"><br><br>
+    <label for="description">Description:</label><br><br>
+    <input id="description" name="description" type ="text"><br><br>
+    <input type="submit" value="submit" onclick="addtext()"><br><br>
+    </form>
+    </body>
+
+
+    </html>
