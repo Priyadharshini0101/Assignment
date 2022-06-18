@@ -4,7 +4,7 @@
 $host="localhost";
 $user="root";
 $passwd="";
-$database="helping_hands";
+$database="helping_hand";
 
 $conn=mysqli_connect($host,$user,$passwd,$database);
 
